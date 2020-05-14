@@ -1,0 +1,16 @@
+server:
+    port: 7290
+
+spring:
+    servlet:
+        multipart:
+            enabled: true
+            file-size-threshold: 2KB
+            max-file-size: 5MB
+            max-request-size: 10MB
+    minio:
+        url: http://192.168.0.247:9000
+        bucket: test
+        access-key: minioadmin
+        secret-key: minioadmin
+
